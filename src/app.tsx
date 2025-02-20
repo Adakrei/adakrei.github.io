@@ -2,11 +2,26 @@ import { Fragment } from 'preact/jsx-runtime';
 import adakreiLogo from '/adakrei.svg';
 import './app.css';
 
+import HeroSection from './component/HeroSection'
+import Services from './component/Services';
+
 export function App() {
     const currentYear = new Date().getFullYear();
 
     return (
         <Fragment>
+            <header >
+                <HeroSection />
+            </header>
+            <main>
+                <Services />
+            </main>
+
+
+
+
+
+
             <header className="bg-gray-900 text-white">
                 <div className="container mx-auto flex justify-between items-center py-4 px-6">
                     <div className="flex items-center text-lg font-bold">
