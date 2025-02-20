@@ -26,20 +26,18 @@ const service_content : object[] = [
 ]
 function ServiceCard({title='Title', description='Description'}){
     return(
-        <>
-            <div className='bg-[#1E2351]/80 text-white w-5/12 h-80 border-solid border-1 rounded-4xl grow-1 flex flex-col justify-between'>
-                <div>
-                    <h3 className='text-4xl text-left mx-6 mt-4'>{title}</h3>
-                    <p className='text-2xl text-left mx-6'>{description}</p>
-                </div>
-                <button className="flex items-center hover:underline mx-6 mb-4">
-                    <div className="w-8 h-8 border rounded-full flex items-center justify-center mr-2">
-                        <ArrowUpRight size={26} />
-                    </div>
-                    <p className='text-xl'>Learn more</p>
-                </button>
+        <div className='bg-[#1E2351]/80 text-white w-5/12 h-80 border-solid border-1 rounded-4xl grow-1 flex flex-col justify-between'>
+            <div>
+                <h3 className='text-4xl text-left mx-6 mt-4'>{title}</h3>
+                <p className='text-2xl text-left mx-6'>{description}</p>
             </div>
-        </>
+            <button className="flex items-center hover:underline mx-6 mb-4">
+                <div className="w-8 h-8 border rounded-full flex items-center justify-center mr-2">
+                    <ArrowUpRight size={26} />
+                </div>
+                <p className='text-xl'>Learn more</p>
+            </button>
+        </div>
     )
 }
 
