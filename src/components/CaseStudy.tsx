@@ -1,5 +1,5 @@
 import { FunctionComponent } from 'preact';
-import type { CaseStudyProps } from '../interfaces/CaseStudyProps';
+import type { CaseStudyProps } from '@/interfaces/CaseStudyProps';
 
 export const CaseStudy: FunctionComponent<CaseStudyProps> = ({ id, position, content, imageUrl }) => {
     const CaseNumber = () => (

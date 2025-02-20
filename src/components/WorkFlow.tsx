@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks';
-import type { WorkFlowStep } from '../interfaces/WorkFlowStep';
+import type { WorkFlowStep } from '@/interfaces/WorkFlowStep';
 import { WorkFlowItem } from './WorkFlowItem';
 import { FunctionComponent } from 'preact';
 
