@@ -1,16 +1,13 @@
-
-// import adakreiLogo from '/adakrei.svg';
-import ContactUs from "./components/ContactUs";
-import Footer from "./components/Footer";
+import { Fragment } from 'preact/jsx-runtime';
+import ContactUs from './components/ContactUs';
+import Footer from './components/Footer';
 import './app.css';
 
 export function App() {
-    
-
     return (
-        <div>
-      <ContactUs />
-      <Footer />
-    </div>
+        <Fragment>
+            <ContactUs />
+            <Footer />
+        </Fragment>
     );
 }
