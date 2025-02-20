@@ -1,6 +1,7 @@
-import { useState } from 'preact/hooks';
 import type { WorkFlowStep } from '@/interfaces/WorkFlowStep';
 import { WorkFlowItem } from './WorkFlowItem';
+
+import { useState } from 'preact/hooks';
 import { FunctionComponent } from 'preact';
 
 export const WorkFlow: FunctionComponent = () => {

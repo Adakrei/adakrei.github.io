@@ -2,7 +2,7 @@ import { FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-900 text-white rounded-t-[50px] overflow-hidden px-8 py-12">
+        <footer className="bg-gray-900 text-white overflow-hidden px-8 py-12">
             <div className="max-w-7xl w-4/5 mx-auto flex flex-col md:flex-row justify-between items-start mb-12">
                 {/* Logo */}
                 <div className="flex flex-col space-y-2 text-center md:text-left">

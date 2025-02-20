@@ -1,6 +1,7 @@
+import { FormData } from '@/interfaces/FormData';
+
 import React, { useState } from 'react';
 import { FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
-import { FormData } from '@/interfaces/FormData';
 
 const ContactUs: React.FC = () => {
     // Define formData using interface
@@ -23,7 +24,7 @@ const ContactUs: React.FC = () => {
     };
 
     return (
-        <section className="bg-black text-white py-16 px-8 flex flex-col items-center justify-center min-h-screen">
+        <section className="text-white py-16 px-8 flex flex-col items-center justify-center min-h-screen">
             <div className="w-full max-w-7xl pl-4 md:pl-8 mb-8">
                 <h2 className="text-4xl md:text-5xl font-bold text-left">Contact Us</h2>
             </div>

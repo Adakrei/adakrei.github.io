@@ -1,4 +1,5 @@
 import type { WorkflowItemProps } from '@/interfaces/WorkFlowItemProps';
+
 import { ComponentType } from 'preact';
 
 export const WorkFlowItem: ComponentType<WorkflowItemProps> = ({ step, isOpen, isActive, onToggle }) => {

@@ -1,5 +1,6 @@
-import { FunctionComponent } from 'preact';
 import { CaseStudy } from './CaseStudy';
+
+import { FunctionComponent } from 'preact';
 
 export const CaseStudies: FunctionComponent = () => {
     const cases = [
