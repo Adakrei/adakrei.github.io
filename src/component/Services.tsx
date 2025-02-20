@@ -44,7 +44,7 @@ function ServiceCard({title='Title', description='Description'}){
 
 export default function Services(){
     return(
-        <div className='px-12 w-screen bg-black text-white'>
+        <div className='px-28 w-screen bg-black text-white'>
             <h2 className='text-6xl text-left py-3'>Services</h2>
             <div className='flex flex-wrap justify-evenly  gap-6'>
                 {service_content.map((item)=>(
