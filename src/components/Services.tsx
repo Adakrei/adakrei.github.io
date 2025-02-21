@@ -1,4 +1,4 @@
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const service_content: object[] = [
     {
@@ -22,6 +22,7 @@ const service_content: object[] = [
         description: 'Website Developing'
     }
 ];
+
 function ServiceCard({ title = 'Title', description = 'Description' }) {
     return (
         <div className="bg-[#1E2351]/80 text-white w-5/12 h-80 border-solid border-1 rounded-4xl grow-1 flex flex-col justify-between min-w-96">
@@ -31,7 +32,7 @@ function ServiceCard({ title = 'Title', description = 'Description' }) {
             </div>
             <button className="flex items-center hover:underline mx-6 mb-4">
                 <div className="w-8 h-8 border rounded-full flex items-center justify-center mr-2">
-                    <ArrowUpRight size={26} />
+                    <ArrowRight size={26} />
                 </div>
                 <p className="text-xl">Learn more</p>
             </button>
@@ -41,7 +42,7 @@ function ServiceCard({ title = 'Title', description = 'Description' }) {
 
 export default function Services() {
     return (
-        <div className="px-28 w-screen bg-black text-white">
+        <div className="max-w-6xl mx-auto px-4 py-16 text-white w-screen">
             <h2 className="text-6xl text-left py-3">Services</h2>
             <div className="flex flex-wrap justify-evenly  gap-6">
                 {service_content.map((item) => (
