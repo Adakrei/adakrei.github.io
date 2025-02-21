@@ -6,7 +6,7 @@ function Navigation() {
         { title: 'Services', url: '#services' },
         { title: 'Cases', url: '#cases' },
         { title: 'Workflow', url: '#workflow' },
-        { title: 'Contact Us', url: '#contact' },
+        { title: 'Contact Us', url: '#contact' }
     ];
 
     return (

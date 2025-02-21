@@ -19,22 +19,6 @@ const Footer = () => {
                     <p className="text-gray-300">Address: To Be Filled</p>
                 </div>
 
-                {/* Navigation */}
-                <nav className="mt-6 md:mt-0 flex flex-wrap justify-center md:justify-start gap-4 text-gray-300">
-                    <a href="#" className="hover:text-white">
-                        Services
-                    </a>
-                    <a href="#" className="hover:text-white">
-                        Customer Cases
-                    </a>
-                    <a href="#" className="hover:text-white">
-                        Workflow
-                    </a>
-                    <a href="#" className="hover:text-white">
-                        About us
-                    </a>
-                </nav>
-
                 {/* Social */}
                 <div className="mt-6 md:mt-0 flex space-x-6 text-2xl">
                     <a href="#" className="hover:text-gray-400">
