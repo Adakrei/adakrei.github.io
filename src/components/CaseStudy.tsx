@@ -1,6 +1,6 @@
 import type { CaseStudyProps } from '@/interfaces/CaseStudyProps';
 
-import { FunctionComponent } from 'preact';
+import { FunctionComponent, Fragment } from 'preact';
 
 export const CaseStudy: FunctionComponent<CaseStudyProps> = ({ id, position, content, imageUrl }) => {
     const CaseNumber = () => (
@@ -22,7 +22,7 @@ export const CaseStudy: FunctionComponent<CaseStudyProps> = ({ id, position, con
     return (
         <div className="flex items-center w-full py-16">
             {position === 'left' ? (
-                <>
+                <Fragment>
                     <div className="w-1/3 flex justify-start">
                         <CaseNumber />
                     </div>
@@ -30,9 +30,9 @@ export const CaseStudy: FunctionComponent<CaseStudyProps> = ({ id, position, con
                     <div className="w-1/3 flex justify-end">
                         <CaseImage />
                     </div>
-                </>
+                </Fragment>
             ) : (
-                <>
+                <Fragment>
                     <div className="w-1/3 flex justify-start">
                         <CaseImage />
                     </div>
@@ -40,7 +40,7 @@ export const CaseStudy: FunctionComponent<CaseStudyProps> = ({ id, position, con
                     <div className="w-1/3 flex justify-end">
                         <CaseNumber />
                     </div>
-                </>
+                </Fragment>
             )}
         </div>
     );

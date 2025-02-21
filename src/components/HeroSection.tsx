@@ -1,3 +1,4 @@
+import { Fragment } from 'preact';
 import adakreiLogo from '/adakrei.svg';
 
 function Navigation() {
@@ -24,7 +25,7 @@ function Navigation() {
 
 function Herosection() {
     return (
-        <>
+        <Fragment>
             <Navigation />
             <div className="bg-black h-screen content-center text-white">
                 <div className="flex items-center justify-center text-xl ">
@@ -36,7 +37,7 @@ function Herosection() {
                     <p>Our implementation</p>
                 </div>
             </div>
-        </>
+        </Fragment>
     );
 }
 

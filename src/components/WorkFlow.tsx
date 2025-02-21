@@ -26,7 +26,6 @@ export const WorkFlow: FunctionComponent = () => {
                 <div className="inline-block text-white rounded-full text-5xl font-semibold">Our Workflow</div>
                 <p className="text-white inline-block ml-2">Step-by-Step Guide to Get Your Things Done</p>
             </div>
-
             <div className="space-y-4">
                 {workflowSteps.map((step) => (
                     <WorkFlowItem
