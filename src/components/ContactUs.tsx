@@ -24,7 +24,7 @@ const ContactUs: React.FC = () => {
     };
 
     return (
-        <section className="text-white py-16 px-8 flex flex-col items-center justify-center min-h-screen">
+        <section className="max-w-6xl mx-auto px-4 py-16 text-white">
             <div className="w-full max-w-7xl pl-4 md:pl-8 mb-8">
                 <h2 className="text-4xl md:text-5xl font-bold text-left">Contact Us</h2>
             </div>
