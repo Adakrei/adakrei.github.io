@@ -25,7 +25,7 @@ const service_content: object[] = [
 
 function ServiceCard({ title = 'Title', description = 'Description' }) {
     return (
-        <div className="bg-[#1E2351]/80 text-white w-5/12 h-80 border-solid border-1 rounded-4xl grow-1 flex flex-col justify-between min-w-96">
+        <div className="bg-[#1E2351]/80 text-white w-5/12 h-80 border-solid rounded-4xl grow-1 flex flex-col justify-between min-w-96">
             <div>
                 <h3 className="text-4xl text-left mx-6 mt-4">{title}</h3>
                 <p className="text-2xl text-left mx-6">{description}</p>
