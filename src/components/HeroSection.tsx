@@ -33,7 +33,7 @@ function Herosection() {
                     <span className="pl-4 text-4xl">Adakrei</span>
                 </div>
                 <div className="text-7xl">
-                    <p>You Imagination,</p>
+                    <p>Your Imagination,</p>
                     <p>Our implementation</p>
                 </div>
             </div>
