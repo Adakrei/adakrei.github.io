@@ -33,7 +33,7 @@ const ContactUs: React.FC = () => {
                 {/* Right side: Contact information block */}
                 <div className="w-full md:w-1/2 flex flex-col justify-center space-y-8">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d352.1377902433443!2d121.2420472023062!3d24.954999836586484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823360f26e9b9%3A0xe94eee18f9cff997!2zIzE1QmlzdHJvIOaLvuS8jeiZn-mkkOmFkumkqC3mmqLpo7J85Lit5aOi5b-F5ZCD6aSQ6YWS6aSofOS6uuawo-mkkOW7s3zlv4XljrvphZLlkKd85rex5aSc6YWS5ZCn!5e0!3m2!1szh-TW!2stw!4v1740146724063!5m2!1szh-TW!2stw"
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d266.63982258313314!2d121.242168703166!3d24.954638579520875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjTCsDU3JzE3LjEiTiAxMjHCsDE0JzMyLjEiRQ!5e1!3m2!1sen!2sus!4v1740149987146!5m2!1sen!2sus"
                         width="600"
                         height="450"
                         style="border:0;"
