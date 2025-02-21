@@ -5,7 +5,7 @@ function Navigation() {
     const sectionName: string[] = ['Services', 'Case Study', 'Workflow', 'Contact Us'];
 
     return (
-        <div className="bg-black fixed top-0 left-0 w-full">
+        <div className="fixed top-0 left-0 w-full">
             <nav className="flex items-center justify-between px-12 py-2 text-white bg-white/10  backdrop-blur-3xl ">
                 <div className="flex items-center text-xl">
                     <img src={adakreiLogo} className="logo bg" alt="Adakrei logo"></img>
@@ -27,7 +27,7 @@ function Herosection() {
     return (
         <Fragment>
             <Navigation />
-            <div className="bg-black h-screen content-center text-white">
+            <div className="h-screen content-center text-white">
                 <div className="flex items-center justify-center text-xl ">
                     <img src={adakreiLogo} className="logo " alt="Adakrei logo"></img>
                     <span className="pl-4 text-4xl">Adakrei</span>
