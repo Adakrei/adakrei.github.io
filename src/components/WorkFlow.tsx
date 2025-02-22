@@ -23,8 +23,8 @@ export const WorkFlow: FunctionComponent = () => {
     return (
         <section className="max-w-6xl mx-auto px-4 py-16" id={'workflow'}>
             <div className="mb-8">
-                <div className="inline-block text-white rounded-full text-5xl font-semibold">Our Workflow</div>
-                <p className="text-white inline-block ml-2">Step-by-Step Guide to Get Your Things Done</p>
+                <div className="py-3 inline-block-left flex text-white text-left text-6xl font-bold">Our Workflow</div>
+                <div className="text-white inline-block ml-2 flex">Step-by-Step Guide to Get Your Things Done</div>
             </div>
             <div className="space-y-4">
                 {workflowSteps.map((step) => (
