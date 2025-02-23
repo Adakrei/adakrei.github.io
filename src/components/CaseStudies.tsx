@@ -23,7 +23,7 @@ export const CaseStudies: FunctionComponent = () => {
 
     return (
         <section className="max-w-6xl mx-auto px-4 py-16" id={'cases'}>
-            <h2 className="text-6xl text-white py-3 font-bold text-left">Cases</h2>
+            <h2 className="text-4xl md:text-6xl text-white py-3  text-left">Cases</h2>
             <div className="space-y-8">
                 {cases.map((caseItem) => (
                     <CaseStudy key={caseItem.id} {...caseItem} />
