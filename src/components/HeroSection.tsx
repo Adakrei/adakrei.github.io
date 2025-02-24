@@ -1,25 +1,40 @@
 import { Fragment } from 'preact';
 import { Disclosure, DisclosureButton, DisclosurePanel, Transition } from '@headlessui/react';
+import { setUrlParam } from '@carry0987/utils';
 import adakreiLogo from '/adakrei.svg';
 
 const Navigation = () => {
     const sections = [
-        { title: 'Services', url: '#services' },
-        { title: 'Cases', url: '#cases' },
-        { title: 'Workflow', url: '#workflow' },
-        { title: 'Contact Us', url: '#contact' }
+        { title: 'Services', id: 'services' },
+        { title: 'Cases', id: 'cases' },
+        { title: 'Workflow', id: 'workflow' },
+        { title: 'Contact Us', id: 'contact' }
     ];
+
+    // Handle scrolling to the target function
+    const handleScrollTo = (id: string) => {
+        const targetElement = document.getElementById(id); // Get the target block
+        if (targetElement) {
+            // Use smooth scrolling
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start' // Scroll to the top of the target block
+            });
+        }
+    };
+
+    const currentUrl: string = setUrlParam(window.location.href, null, true);
 
     return (
         <Disclosure as="nav" className="bg-white/10 backdrop-blur-lg fixed top-0 left-0 w-full z-1 text-white">
-            {({ open }) => (
+            {({ open, close }) => (
                 <Fragment>
                     <div className="flex items-center justify-between px-6 py-4">
                         {/* Left logo */}
-                        <div className="flex items-center text-xl">
+                        <a href={currentUrl} className="flex items-center text-xl">
                             <img src={adakreiLogo} className="logo bg" alt="Adakrei logo" />
                             <span className="pl-2">Adakrei</span>
-                        </div>
+                        </a>
 
                         {/* Hamburger button */}
                         <div className="md:hidden">
@@ -59,11 +74,14 @@ const Navigation = () => {
                         {/* Desktop menu */}
                         <ul className="hidden md:flex items-center gap-x-6">
                             {sections.map((section) => (
-                                <li key={section.title}>
-                                    <a href={section.url} className="hover:underline text-white">
-                                        {section.title}
-                                    </a>
-                                </li>
+                                <button
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        handleScrollTo(section.id);
+                                    }}
+                                    className="hover:underline cursor-pointer text-white">
+                                    {section.title}
+                                </button>
                             ))}
                         </ul>
                     </div>
@@ -83,9 +101,16 @@ const Navigation = () => {
                                     <li
                                         key={section.title}
                                         className="px-6 py-4 border-b border-gray-400 last:border-b-0">
-                                        <a href={section.url} className="block hover:underline">
+
+                                        <button
+                                            onClick={(e) => {
+                                                e.preventDefault();
+                                                handleScrollTo(section.id);
+                                                close();
+                                            }}
+                                            className="block hover:underline text-white w-full">
                                             {section.title}
-                                        </a>
+                                        </button>
                                     </li>
                                 ))}
                             </ul>

@@ -2,12 +2,13 @@ import { Fragment } from 'preact/jsx-runtime';
 import './app.css';
 
 import { BackgroundCanvas } from '@/components/BackgroundCanvas';
+import { HeroSection } from '@/components/HeroSection';
+import { Services } from '@/components/Services';
 import { CaseStudies } from '@/components/CaseStudies';
 import { WorkFlow } from '@/components/WorkFlow';
 import { ContactUs } from '@/components/ContactUs';
 import { Footer } from '@/components/Footer';
-import { HeroSection } from '@/components/HeroSection';
-import { Services } from '@/components/Services';
+import { ScrollToTop } from '@/components/ScrollToTop';
 
 export function App() {
     return (
@@ -20,6 +21,7 @@ export function App() {
                 <WorkFlow />
                 <ContactUs />
                 <Footer />
+                <ScrollToTop />
             </div>
         </Fragment>
     );
