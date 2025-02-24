@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { Dot, WArea } from '@/interfaces/Background';
 
 const BackgroundCanvas: React.FC = () => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -9,15 +10,52 @@ const BackgroundCanvas: React.FC = () => {
         const ctx = canvas.getContext('2d');
         if (!ctx) return;
 
+        // Store the animation frame id
+        let animationId: number;
+
+        // Calculate the number of dots dynamically based on canvas size
+        const calculateDotCount = () => Math.floor((canvas.width * canvas.height) / 4000);
+
+        // Initialize dots dynamically
+        let dots: Dot[] = Array.from({ length: calculateDotCount() }, () => ({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            xa: Math.random() * 2 - 1,
+            ya: Math.random() * 2 - 1,
+            max: 6000
+        }));
+
+        const resizeDots = () => {
+            const targetCount = calculateDotCount();
+            const currentCount = dots.length;
+        
+            if (targetCount > currentCount) {
+                // Add new dots
+                dots.push(...Array.from({ length: targetCount - currentCount }, () => ({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    xa: Math.random() * 2 - 1,
+                    ya: Math.random() * 2 - 1,
+                    max: 6000
+                })));
+            } else if (targetCount < currentCount) {
+                // Remove excess dots
+                dots.splice(targetCount);
+            }
+        };
+
         const resizeCanvas = () => {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
+
+            // Adjust dot count smoothly instead of full recreation
+            resizeDots();
         };
 
         resizeCanvas();
         window.addEventListener('resize', resizeCanvas);
 
-        const warea = { x: null as number | null, y: null as number | null, max: 20000 };
+        const warea: WArea = { x: null, y: null, max: 20000 };
 
         const onMouseMove = (e: MouseEvent) => {
             warea.x = e.clientX;
@@ -31,20 +69,6 @@ const BackgroundCanvas: React.FC = () => {
 
         window.addEventListener('mousemove', onMouseMove);
         window.addEventListener('mouseout', onMouseOut);
-
-        const dots: {
-            x: number;
-            y: number;
-            xa: number;
-            ya: number;
-            max: number;
-        }[] = new Array(300).fill(null).map(() => ({
-            x: Math.random() * canvas.width,
-            y: Math.random() * canvas.height,
-            xa: Math.random() * 2 - 1,
-            ya: Math.random() * 2 - 1,
-            max: 6000
-        }));
 
         const RAF = window.requestAnimationFrame || ((callback) => setTimeout(callback, 1000 / 60));
 
@@ -88,7 +112,7 @@ const BackgroundCanvas: React.FC = () => {
                 }
             });
 
-            RAF(animate);
+            animationId = RAF(animate);
         };
 
         // Delay animation start
@@ -99,6 +123,11 @@ const BackgroundCanvas: React.FC = () => {
             window.removeEventListener('resize', resizeCanvas);
             window.removeEventListener('mousemove', onMouseMove);
             window.removeEventListener('mouseout', onMouseOut);
+
+            // Cancel the animation frame
+            if (animationId) {
+                cancelAnimationFrame(animationId);
+            }
         };
     }, []);
 
