@@ -12,6 +12,8 @@ const BackgroundCanvas: React.FC = () => {
 
         // Store the animation frame id
         let animationId: number;
+        // Check if the device is touch-enabled
+        const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
         // Calculate the number of dots dynamically based on canvas size
         const calculateDotCount = () => Math.floor((canvas.width * canvas.height) / 4000);
@@ -60,6 +62,7 @@ const BackgroundCanvas: React.FC = () => {
         const warea: WArea = { x: null, y: null, max: 20000 };
 
         const onMouseMove = (e: MouseEvent) => {
+            if (isTouchDevice && e.type === 'mousemove') return;
             warea.x = e.clientX;
             warea.y = e.clientY;
         };
