@@ -37,7 +37,7 @@ function Herosection() {
                     <img src={adakreiLogo} className="logo" alt="Adakrei logo"></img>
                     <span className="pl-4 text-4xl">Adakrei</span>
                 </div>
-                <div className="text-7xl">
+                <div className="text-5xl md:text-6xl lg:text-7xl">
                     <p>Your Imagination,</p>
                     <p>Our implementation</p>
                 </div>
