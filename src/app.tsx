@@ -4,7 +4,7 @@ import './app.css';
 import { BackgroundCanvas } from '@/components/BackgroundCanvas';
 import { HeroSection } from '@/components/HeroSection';
 import { Services } from '@/components/Services';
-import { CaseStudies } from '@/components/CaseStudies';
+import { CaseStudy } from '@/components/CaseStudy';
 import { WorkFlow } from '@/components/WorkFlow';
 import { ContactUs } from '@/components/ContactUs';
 import { Footer } from '@/components/Footer';
@@ -17,7 +17,7 @@ export function App() {
             <div className="relative z-1">
                 <HeroSection />
                 <Services />
-                <CaseStudies />
+                <CaseStudy />
                 <WorkFlow />
                 <ContactUs />
                 <Footer />

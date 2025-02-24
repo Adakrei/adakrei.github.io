@@ -34,7 +34,7 @@ const ServiceCard = ({ title = 'Title', description = 'Description' }) => {
                 <div className="w-8 h-8 border rounded-full flex items-center justify-center mr-2">
                     <ArrowRight size={26} />
                 </div>
-                <p className="text-xl">Learn more</p>
+                <p className="text-xl cursor-pointer hover:underline">Learn more</p>
             </button>
         </div>
     );
