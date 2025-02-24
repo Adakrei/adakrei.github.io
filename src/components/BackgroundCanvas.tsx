@@ -28,16 +28,18 @@ const BackgroundCanvas: React.FC = () => {
         const resizeDots = () => {
             const targetCount = calculateDotCount();
             const currentCount = dots.length;
-        
+
             if (targetCount > currentCount) {
                 // Add new dots
-                dots.push(...Array.from({ length: targetCount - currentCount }, () => ({
-                    x: Math.random() * canvas.width,
-                    y: Math.random() * canvas.height,
-                    xa: Math.random() * 2 - 1,
-                    ya: Math.random() * 2 - 1,
-                    max: 6000
-                })));
+                dots.push(
+                    ...Array.from({ length: targetCount - currentCount }, () => ({
+                        x: Math.random() * canvas.width,
+                        y: Math.random() * canvas.height,
+                        xa: Math.random() * 2 - 1,
+                        ya: Math.random() * 2 - 1,
+                        max: 6000
+                    }))
+                );
             } else if (targetCount < currentCount) {
                 // Remove excess dots
                 dots.splice(targetCount);

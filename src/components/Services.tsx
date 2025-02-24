@@ -23,7 +23,7 @@ const service_content: object[] = [
     }
 ];
 
-function ServiceCard({ title = 'Title', description = 'Description' }) {
+const ServiceCard = ({ title = 'Title', description = 'Description' }) => {
     return (
         <div className="bg-[#1E2351] text-white w-5/12 h-80 border-solid rounded-4xl grow-1 flex flex-col justify-between min-w-84">
             <div>
@@ -38,9 +38,9 @@ function ServiceCard({ title = 'Title', description = 'Description' }) {
             </button>
         </div>
     );
-}
+};
 
-export default function Services() {
+const Services = () => {
     return (
         <div className="max-w-6xl mx-auto px-4 py-16 text-white w-screen" id={'services'}>
             <h2 className="text-4xl md:text-6xl text-left py-3">Services</h2>
@@ -51,4 +51,6 @@ export default function Services() {
             </div>
         </div>
     );
-}
+};
+
+export { Services };

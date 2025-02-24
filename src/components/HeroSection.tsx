@@ -1,7 +1,7 @@
 import { Fragment } from 'preact';
 import adakreiLogo from '/adakrei.svg';
 
-function Navigation() {
+const Navigation = () => {
     const sections = [
         { title: 'Services', url: '#services' },
         { title: 'Cases', url: '#cases' },
@@ -26,9 +26,9 @@ function Navigation() {
             </nav>
         </div>
     );
-}
+};
 
-function Herosection() {
+const HeroSection = () => {
     return (
         <Fragment>
             <Navigation />
@@ -44,6 +44,6 @@ function Herosection() {
             </div>
         </Fragment>
     );
-}
+};
 
-export default Herosection;
+export { HeroSection };
