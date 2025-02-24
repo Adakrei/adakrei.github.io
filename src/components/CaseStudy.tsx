@@ -4,7 +4,7 @@ import { FunctionComponent, Fragment } from 'preact';
 
 export const CaseStudy: FunctionComponent<CaseStudyProps> = ({ id, position, content, imageUrl }) => {
     const CaseNumber = () => (
-        <div className="bg-[#1E2351]/80 text-white p-4 rounded-lg inline-block h-1/3">
+        <div className="bg-[#1E2351] text-white p-4 rounded-lg inline-block h-1/3">
             <h2 className="text-xl">Case {id}</h2>
         </div>
     );
