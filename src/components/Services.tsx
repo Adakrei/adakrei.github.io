@@ -50,7 +50,7 @@ const Modal: FunctionComponent<ModalProps> = ({ isOpen, onClose, title, descript
         <div
             className="fixed inset-0 bg-transparent flex items-center justify-center z-50"
             style="backdrop-filter: blur(4px);">
-            <div className="bg-[#1E2351] bg-opacity-80 text-white rounded-xl p-6 w-full max-w-lg mx-4 border border-gray-700 shadow-lg">
+            <div className="bg-[#1E2351] bg-opacity-80 text-white rounded-xl p-8 w-full max-w-3xl mx-4 border border-gray-700 shadow-lg">
                 <div className="flex justify-between items-center mb-4">
                     <h2 className="text-2xl font-bold">{title}</h2>
                     <button onClick={onClose} className="text-gray-300 hover:text-white">
@@ -59,9 +59,7 @@ const Modal: FunctionComponent<ModalProps> = ({ isOpen, onClose, title, descript
                 </div>
                 <div className="mb-6">
                     <p className="text-lg">{description}</p>
-                    <p className="mt-4 text-gray-300">
-                        Add some description here.
-                    </p>
+                    <p className="mt-4 text-gray-300">Add some description here.</p>
                 </div>
                 <div className="flex justify-end">
                     <button onClick={onClose} className="bg-blue-600 hover:bg-blue-500 text-white py-2 px-4 rounded">
