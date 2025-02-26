@@ -132,7 +132,7 @@ const HeroSection = () => {
                 </div>
                 <div className="text-5xl md:text-6xl lg:text-7xl">
                     <p>Your Imagination,</p>
-                    <p>Our implementation</p>
+                    <p>Our Implementation</p>
                 </div>
             </div>
         </Fragment>
