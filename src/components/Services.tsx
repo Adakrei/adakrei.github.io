@@ -1,4 +1,4 @@
-import { h, FunctionComponent } from 'preact';
+import { FunctionComponent } from 'preact';
 import { useState } from 'preact/hooks';
 import { ArrowRight, X } from 'lucide-react';
 
@@ -47,23 +47,24 @@ const Modal: FunctionComponent<ModalProps> = ({ isOpen, onClose, title, descript
     if (!isOpen) return null;
 
     return (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-            <div className="bg-white text-gray-800 rounded-xl p-6 w-full max-w-lg mx-4">
+        <div
+            className="fixed inset-0 bg-transparent flex items-center justify-center z-50"
+            style="backdrop-filter: blur(4px);">
+            <div className="bg-[#1E2351] bg-opacity-80 text-white rounded-xl p-6 w-full max-w-lg mx-4 border border-gray-700 shadow-lg">
                 <div className="flex justify-between items-center mb-4">
                     <h2 className="text-2xl font-bold">{title}</h2>
-                    <button onClick={onClose} className="text-gray-500 hover:text-gray-700">
+                    <button onClick={onClose} className="text-gray-300 hover:text-white">
                         <X size={24} />
                     </button>
                 </div>
                 <div className="mb-6">
                     <p className="text-lg">{description}</p>
-                    <p className="mt-4">
-                        This modal contains additional information about the service. You can customize this content to
-                        include more details about features, benefits, pricing, or any other relevant information.
+                    <p className="mt-4 text-gray-300">
+                        Add some description here.
                     </p>
                 </div>
                 <div className="flex justify-end">
-                    <button onClick={onClose} className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded">
+                    <button onClick={onClose} className="bg-blue-600 hover:bg-blue-500 text-white py-2 px-4 rounded">
                         Close
                     </button>
                 </div>
