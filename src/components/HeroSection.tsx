@@ -101,7 +101,6 @@ const Navigation = () => {
                                     <li
                                         key={section.title}
                                         className="px-6 py-4 border-b border-gray-400 last:border-b-0">
-
                                         <button
                                             onClick={(e) => {
                                                 e.preventDefault();

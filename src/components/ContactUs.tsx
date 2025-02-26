@@ -12,19 +12,27 @@ const ContactUs: React.FC = () => {
                 <div className="w-full md:w-1/2 p-8 lg:p-12 rounded-lg shadow-lg space-y-16">
                     <div className="flex items-center space-x-6">
                         <FaEnvelope size={50} />
-                        <a href="mailto:service@adakrei.com" className="text-gray-300 hover:underline text-xl md:text-2xl leading-normal">
+                        <a
+                            href="mailto:service@adakrei.com"
+                            className="text-gray-300 hover:underline text-xl md:text-2xl leading-normal">
                             service@adakrei.com
                         </a>
                     </div>
                     <div className="flex items-center space-x-6">
                         <FaLinkedin size={50} />
-                        <a href="https://www.linkedin.com/company/adakrei/" target={'_blank'} className="text-gray-300 hover:underline text-xl md:text-2xl leading-normal">
+                        <a
+                            href="https://www.linkedin.com/company/adakrei/"
+                            target={'_blank'}
+                            className="text-gray-300 hover:underline text-xl md:text-2xl leading-normal">
                             AdaKrei
                         </a>
                     </div>
                     <div className="flex items-center space-x-6">
                         <FaGithub size={50} />
-                        <a href="https://github.com/Adakrei" target={'_blank'} className="text-gray-300 hover:underline text-xl md:text-2xl leading-normal">
+                        <a
+                            href="https://github.com/Adakrei"
+                            target={'_blank'}
+                            className="text-gray-300 hover:underline text-xl md:text-2xl leading-normal">
                             Adakrei
                         </a>
                     </div>
