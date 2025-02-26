@@ -17,7 +17,7 @@ const Footer = () => {
                         </a>
                     </p>
                     <p className="text-gray-300">
-                        Address: 5 F.-14, No. 15, Daren 2nd St., Puzhong Vil., Zhongli Dist., Taoyuan City 320041,
+                        Address: 5F.-14, No. 15, Daren 2nd St., Puzhong Vil., Zhongli Dist., Taoyuan City 320041,
                         Taiwan (R.O.C.)
                     </p>
                 </div>
