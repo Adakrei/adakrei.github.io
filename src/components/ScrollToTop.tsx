@@ -34,8 +34,7 @@ const ScrollToTop: React.FC = () => {
                     rounded-full w-12 h-12 text-lg shadow-md cursor-pointer
                     transform transition-transform duration-300
                     ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`}
-                aria-label="Scroll to top"
-            >
+                aria-label="Scroll to top">
                 <span>↑</span>
             </button>
         </div>

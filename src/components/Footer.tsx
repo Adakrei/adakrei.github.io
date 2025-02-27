@@ -17,7 +17,7 @@ const Footer = () => {
                         </a>
                     </p>
                     <p className="text-gray-300">
-                        Address: 5 F.-14, No. 15, Daren 2nd St., Puzhong Vil., Zhongli Dist., Taoyuan City 320041,
+                        Address: 5F.-14, No. 15, Daren 2nd St., Puzhong Vil., Zhongli Dist., Taoyuan City 320041,
                         Taiwan (R.O.C.)
                     </p>
                 </div>
@@ -27,7 +27,10 @@ const Footer = () => {
                     <a href="https://github.com/Adakrei" target={'_blank'} className="hover:text-gray-400">
                         <FaGithub />
                     </a>
-                    <a href="https://www.linkedin.com/company/adakrei/" target={'_blank'} className="hover:text-gray-400">
+                    <a
+                        href="https://www.linkedin.com/company/adakrei/"
+                        target={'_blank'}
+                        className="hover:text-gray-400">
                         <FaLinkedin />
                     </a>
                 </div>
