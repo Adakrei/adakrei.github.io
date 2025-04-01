@@ -53,7 +53,7 @@ const service_content: ServiceItem[] = [
             },
             {
                 "type": "text-image-left",
-                "text": "Our AI-driven predictive maintenance systems analyze sensor data to anticipate equipment failures, minimizing downtime and improving efficiency in industries such as energy, automotive, and manufacturing.",
+                "text": "Our AI-driven predictive maintenance systems analyze sensor data to anticipate equipment failures, minimizing downtime and improving efficiency in industries.",
                 "imageSrc": monitoringMaintainanceImg,
                 "imageAlt": "Engineers monitoring predictive maintenance dashboard"
             },
