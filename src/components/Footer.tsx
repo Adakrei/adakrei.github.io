@@ -10,16 +10,20 @@ const Footer = () => {
                         <img src="/adakrei.svg" alt="Adakrei" className="w-10 h-10" />
                         <span className="text-2xl font-bold">Adakrei</span>
                     </div>
+                    {/* Email */}
                     <p className="mt-2 text-gray-300">
                         Email:{' '}
                         <a href="mailto:service@adakrei.com" className="hover:underline text-white">
                             service@adakrei.com
                         </a>
                     </p>
+                    {/* Address */}
                     <p className="text-gray-300">
                         Address: 5F.-14, No. 15, Daren 2nd St., Puzhong Vil., Zhongli Dist., Taoyuan City 320041,
                         Taiwan (R.O.C.)
                     </p>
+                    {/* Tax ID */}
+                    <p className="text-gray-300">Tax ID: 93695722</p>
                 </div>
 
                 {/* Social */}
