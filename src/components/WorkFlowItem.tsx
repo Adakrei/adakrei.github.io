@@ -26,7 +26,7 @@ export const WorkFlowItem: ComponentType<WorkflowItemProps> = ({ step, isOpen, i
             </button>
             <div
                 className={`overflow-hidden transition-all duration-300
-            ${isOpen ? 'max-h-48' : 'max-h-0'}`}>
+            ${isOpen ? 'max-h-full' : 'max-h-0'}`}>
                 <div className="p-6 pt-0">
                     <p className="text-white text-justify">{step.description}</p>
                 </div>
