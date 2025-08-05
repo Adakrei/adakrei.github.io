@@ -127,11 +127,11 @@ const HeroSection = () => {
             <Navigation />
             <div className="h-screen content-center text-white">
                 <div className="flex items-center justify-center text-xl">
-                    <img src={adakreiLogo} className="logo" alt="Adakrei logo"></img>
+                    <img src={adakreiLogo} className="logo object-contain object-center" alt="Adakrei logo"></img>
                     <span className="pl-4 text-4xl">Adakrei</span>
                 </div>
-                <div className="text-5xl md:text-6xl lg:text-7xl">
-                    <p>Your Imagination,</p>
+                <div className="mt-4 text-5xl md:text-7xl lg:text-8xl text-center">
+                    <p>Your Imagination</p>
                     <p>Our Implementation</p>
                 </div>
             </div>

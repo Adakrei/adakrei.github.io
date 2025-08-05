@@ -2,18 +2,18 @@ import { FunctionComponent } from 'preact';
 import { useState } from 'preact/hooks';
 import { ArrowRight, X } from 'lucide-react';
 import industrialAutomationImg from '@/assets/industrial-automation.png';
-import monitoringMaintainanceImg from '@/assets/Engineers monitoring predictive maintenance dashboard.png'
-import smartSensingImg from '@/assets/SmartSensor.png'
-import FactoryDashBoardImg from '@/assets/FactoryDashBoard.png'
-import IoTEnvImg from '@/assets/IoTEnv.png'
-import SmartHomeImg from '@/assets/SmartHome.png'
-import APIIntegrationImg from '@/assets/APIIntegrationDiagram.png'
-import TeleComBotImg from '@/assets/TeleComArchi.png'
-import APIWorkFlowImg from '@/assets/API workflow.png'
-import DataBaseArch from '@/assets/DataBaseArchitecture.png'
-import DataMigration from '@/assets/DataMigration.png'
-import ResponesiveWebDesignImg from '@/assets/ResponesiveWebDesign.png'
-import WebsiteDesignProcImg from '@/assets/WebsiteDesignProc.png'
+import monitoringMaintainanceImg from '@/assets/Engineers monitoring predictive maintenance dashboard.png';
+import smartSensingImg from '@/assets/SmartSensor.png';
+import FactoryDashBoardImg from '@/assets/FactoryDashBoard.png';
+import IoTEnvImg from '@/assets/IoTEnv.png';
+import SmartHomeImg from '@/assets/SmartHome.png';
+import APIIntegrationImg from '@/assets/APIIntegrationDiagram.png';
+import TeleComBotImg from '@/assets/TeleComArchi.png';
+import APIWorkFlowImg from '@/assets/API workflow.png';
+import DataBaseArch from '@/assets/DataBaseArchitecture.png';
+import DataMigration from '@/assets/DataMigration.png';
+import ResponesiveWebDesignImg from '@/assets/ResponesiveWebDesign.png';
+import WebsiteDesignProcImg from '@/assets/WebsiteDesignProc.png';
 
 export type ContentSectionType = 'text-image-right' | 'text-image-left' | 'full-text' | 'full-image';
 
@@ -31,174 +31,158 @@ export interface ServiceItem {
     modalContent: ContentSection[];
 }
 
-
 const service_content: ServiceItem[] = [
     {
-        "id": "1",
-        "title": "Machine Learning System",
-        "description": [
-            "Finetuning Pre-trained Models",
-            "Situation-Specified Model Building"
-        ],
-        "modalContent": [
+        id: '1',
+        title: 'Machine Learning System',
+        description: ['Finetuning Pre-trained Models', 'Situation-Specified Model Building'],
+        modalContent: [
             {
-                "type": "text-image-right",
-                "text": "Our machine learning solutions empower industries with intelligent automation, predictive maintenance, and real-time data insights, optimizing productivity and reducing operational costs.",
-                "imageSrc": industrialAutomationImg,
-                "imageAlt": "Industrial automation powered by AI"
+                type: 'text-image-right',
+                text: 'Our machine learning solutions empower industries with intelligent automation, predictive maintenance, and real-time data insights, optimizing productivity and reducing operational costs.',
+                imageSrc: industrialAutomationImg,
+                imageAlt: 'Industrial automation powered by AI'
             },
             {
-                "type": "full-text",
-                "text": "We specialize in industrial AI applications, from defect detection in manufacturing to supply chain optimization and demand forecasting. Our models are designed to work in high-stakes environments with stringent accuracy and reliability requirements."
+                type: 'full-text',
+                text: 'We specialize in industrial AI applications, from defect detection in manufacturing to supply chain optimization and demand forecasting. Our models are designed to work in high-stakes environments with stringent accuracy and reliability requirements.'
             },
             {
-                "type": "text-image-left",
-                "text": "Our AI-driven predictive maintenance systems analyze sensor data to anticipate equipment failures, minimizing downtime and improving efficiency in industries.",
-                "imageSrc": monitoringMaintainanceImg,
-                "imageAlt": "Engineers monitoring predictive maintenance dashboard"
+                type: 'text-image-left',
+                text: 'Our AI-driven predictive maintenance systems analyze sensor data to anticipate equipment failures, minimizing downtime and improving efficiency in industries.',
+                imageSrc: monitoringMaintainanceImg,
+                imageAlt: 'Engineers monitoring predictive maintenance dashboard'
             },
             {
-                "type": "full-text",
-                "text": "Our approach prioritizes transparency, explainability, and seamless integration with industrial systems, ensuring that AI-driven insights translate into measurable business value."
+                type: 'full-text',
+                text: 'Our approach prioritizes transparency, explainability, and seamless integration with industrial systems, ensuring that AI-driven insights translate into measurable business value.'
             }
         ]
     },
     {
-        "id": "2",
-        "title": "IoT System",
-        "description": [
-            "Smart Device Integration",
-            "Smart Home",
-            "Real-time Data Monitoring"
-        ],
-        "modalContent": [
+        id: '2',
+        title: 'IoT System',
+        description: ['Smart Device Integration', 'Smart Home', 'Real-time Data Monitoring'],
+        modalContent: [
             {
-                "type": "full-image",
-                "imageSrc": IoTEnvImg,
-                "imageAlt": "IoT ecosystem diagram"
+                type: 'full-image',
+                imageSrc: IoTEnvImg,
+                imageAlt: 'IoT ecosystem diagram'
             },
             {
-                "type": "text-image-left",
-                "text": "Our IoT solutions bridge the gap between the physical and digital worlds, enabling businesses and homes to monitor, manage, and automate devices and environments in real time.",
-                "imageSrc": smartSensingImg,
-                "imageAlt": "Smart sensors network"
+                type: 'text-image-left',
+                text: 'Our IoT solutions bridge the gap between the physical and digital worlds, enabling businesses and homes to monitor, manage, and automate devices and environments in real time.',
+                imageSrc: smartSensingImg,
+                imageAlt: 'Smart sensors network'
             },
             {
-                "type": "full-text",
-                "text": "We build end-to-end IoT ecosystems—from edge devices and connectivity to cloud platforms and analytics—ensuring reliable data flow, enhanced operational control, and actionable insights."
+                type: 'full-text',
+                text: 'We build end-to-end IoT ecosystems—from edge devices and connectivity to cloud platforms and analytics—ensuring reliable data flow, enhanced operational control, and actionable insights.'
             },
             {
-                "type": "text-image-right",
-                "text": "For industrial environments, our IoT systems enable predictive maintenance, energy management, and remote diagnostics, reducing downtime and increasing efficiency.",
-                "imageSrc": FactoryDashBoardImg,
-                "imageAlt": "Factory dashboard showing IoT data"
+                type: 'text-image-right',
+                text: 'For industrial environments, our IoT systems enable predictive maintenance, energy management, and remote diagnostics, reducing downtime and increasing efficiency.',
+                imageSrc: FactoryDashBoardImg,
+                imageAlt: 'Factory dashboard showing IoT data'
             },
             {
-                "type": "text-image-left",
-                "text": "In smart homes, our IoT solutions offer seamless device integration and automation, allowing users to control lighting, climate, security, and more with ease and intelligence.",
-                "imageSrc": SmartHomeImg,
-                "imageAlt": "Smart home control panel"
-            }
-        ]
-    },    
-    {
-        "id": "3",
-        "title": "API Integration",
-        "description": [
-            "Telecommunication Bot Design",
-            "GraphQL API Design",
-            "Restful API Design"
-        ],
-        "modalContent": [
-            {
-                "type": "full-image",
-                "imageSrc": APIWorkFlowImg,
-                "imageAlt": "API workflow visualization"
-            },
-            {
-                "type": "text-image-right",
-                "text": "Our API integration services connect disparate systems into a unified, streamlined digital environment. Whether it's linking CRMs, ERPs, or cloud platforms, we ensure smooth data flow and enhanced automation.",
-                "imageSrc": APIIntegrationImg,
-                "imageAlt": "API integration diagram"
-            },
-            {
-                "type": "full-text",
-                "text": "We specialize in building scalable, secure RESTful and GraphQL APIs, with thorough documentation, versioning strategies, and performance tuning to support real-time applications and high-throughput systems."
-            },
-            {
-                "type": "text-image-left",
-                "text": "For telecommunications, we design intelligent bot APIs that enable real-time messaging, call automation, and seamless multichannel support.",
-                "imageSrc": TeleComBotImg,
-                "imageAlt": "Telecom bot architecture"
-            }
-        ]
-    },    
-    {
-        "id": "4",
-        "title": "Database System Building",
-        "description": [
-            "SQL and NoSQL Database Design",
-            "Extendable Database for Big Data"
-        ],
-        "modalContent": [
-            {
-                "type": "full-text",
-                "text": "Our database architects build high-performance, scalable database systems tailored to your data needs—whether you're handling structured transactions, unstructured logs, or streaming big data pipelines."
-            },
-            {
-                "type": "text-image-left",
-                "text": "We offer both SQL solutions like PostgreSQL and MySQL for reliable transactional systems, and NoSQL options such as MongoDB and Cassandra for high-volume, schema-flexible applications.",
-                "imageSrc": DataBaseArch,
-                "imageAlt": "Database architecture diagram"
-            },
-            {
-                "type": "text-image-right",
-                "text": "Our data migration and modernization services ensure a seamless transition from legacy systems to modern architectures with high availability, zero data loss, and minimal operational disruption.",
-                "imageSrc": DataMigration,
-                "imageAlt": "Data migration process"
-            },
-            {
-                "type": "full-text",
-                "text": "For big data and analytics-heavy use cases, we build extendable database architectures designed to scale with your data while supporting real-time querying, distributed storage, and fault tolerance."
+                type: 'text-image-left',
+                text: 'In smart homes, our IoT solutions offer seamless device integration and automation, allowing users to control lighting, climate, security, and more with ease and intelligence.',
+                imageSrc: SmartHomeImg,
+                imageAlt: 'Smart home control panel'
             }
         ]
     },
     {
-        "id": "5",
-        "title": "Website Developing",
-        "description": [
-            "Modern UI/UX Experiences",
-            "Fully Responsive Frontend Design",
-            "Robust, Scalable Backend Architecture"
-        ],
-        "modalContent": [
+        id: '3',
+        title: 'API Integration',
+        description: ['Telecommunication Bot Design', 'GraphQL API Design', 'Restful API Design'],
+        modalContent: [
             {
-                "type": "text-image-left",
-                "text": "We create beautiful, responsive websites that deliver exceptional user experiences across all devices, from desktops to smartphones.",
-                "imageSrc": ResponesiveWebDesignImg,
-                "imageAlt": "Responsive website design"
+                type: 'full-image',
+                imageSrc: APIWorkFlowImg,
+                imageAlt: 'API workflow visualization'
             },
             {
-                "type": "full-image",
-                "imageSrc": WebsiteDesignProcImg,
-                "imageAlt": "Website development process"
+                type: 'text-image-right',
+                text: "Our API integration services connect disparate systems into a unified, streamlined digital environment. Whether it's linking CRMs, ERPs, or cloud platforms, we ensure smooth data flow and enhanced automation.",
+                imageSrc: APIIntegrationImg,
+                imageAlt: 'API integration diagram'
             },
             {
-                "type": "full-text",
-                "text": "Our development process emphasizes accessibility, performance, and SEO best practices, ensuring your website not only looks great but also ranks well in search engines and loads quickly for all users."
+                type: 'full-text',
+                text: 'We specialize in building scalable, secure RESTful and GraphQL APIs, with thorough documentation, versioning strategies, and performance tuning to support real-time applications and high-throughput systems.'
+            },
+            {
+                type: 'text-image-left',
+                text: 'For telecommunications, we design intelligent bot APIs that enable real-time messaging, call automation, and seamless multichannel support.',
+                imageSrc: TeleComBotImg,
+                imageAlt: 'Telecom bot architecture'
             }
         ]
-    }    
+    },
+    {
+        id: '4',
+        title: 'Database System Building',
+        description: ['SQL and NoSQL Database Design', 'Extendable Database for Big Data'],
+        modalContent: [
+            {
+                type: 'full-text',
+                text: "Our database architects build high-performance, scalable database systems tailored to your data needs — whether you're handling structured transactions, unstructured logs, or streaming big data pipelines."
+            },
+            {
+                type: 'text-image-left',
+                text: 'We offer both SQL solutions like PostgreSQL and MySQL for reliable transactional systems, and NoSQL options such as MongoDB and Cassandra for high-volume, schema-flexible applications.',
+                imageSrc: DataBaseArch,
+                imageAlt: 'Database architecture diagram'
+            },
+            {
+                type: 'text-image-right',
+                text: 'Our data migration and modernization services ensure a seamless transition from legacy systems to modern architectures with high availability, zero data loss, and minimal operational disruption.',
+                imageSrc: DataMigration,
+                imageAlt: 'Data migration process'
+            },
+            {
+                type: 'full-text',
+                text: 'For big data and analytics-heavy use cases, we build extendable database architectures designed to scale with your data while supporting real-time querying, distributed storage, and fault tolerance.'
+            }
+        ]
+    },
+    {
+        id: '5',
+        title: 'Website Developing',
+        description: [
+            'Modern UI/UX Experiences',
+            'Fully Responsive Frontend Design',
+            'Robust, Scalable Backend Architecture'
+        ],
+        modalContent: [
+            {
+                type: 'text-image-left',
+                text: 'We create beautiful, responsive websites that deliver exceptional user experiences across all devices, from desktops to smartphones.',
+                imageSrc: ResponesiveWebDesignImg,
+                imageAlt: 'Responsive website design'
+            },
+            {
+                type: 'full-image',
+                imageSrc: WebsiteDesignProcImg,
+                imageAlt: 'Website development process'
+            },
+            {
+                type: 'full-text',
+                text: 'Our development process emphasizes accessibility, performance, and SEO best practices, ensuring your website not only looks great but also ranks well in search engines and loads quickly for all users.'
+            }
+        ]
+    }
 ];
-
 
 const ContentSection: FunctionComponent<{ section: ContentSection }> = ({ section }) => {
     switch (section.type) {
         case 'text-image-right':
             return (
-                <div className="flex flex-col md:flex-row gap-8 mb-8 items-center">
+                <div className="flex flex-col md:flex-row gap-8 mb-8 items-center px-4 md:px-0">
                     <div className="md:w-1/2 px-4">
-                        <p className="text-lg leading-relaxed text-justify">{section.text}</p>
+                        <p className="text-lg leading-relaxed text-left">{section.text}</p>
                     </div>
                     <div className="md:w-1/2 px-4">
                         <img
@@ -212,9 +196,9 @@ const ContentSection: FunctionComponent<{ section: ContentSection }> = ({ sectio
 
         case 'text-image-left':
             return (
-                <div className="flex flex-col md:flex-row-reverse gap-8 mb-8 items-center">
+                <div className="flex flex-col md:flex-row-reverse gap-8 mb-8 items-center px-4 md:px-0">
                     <div className="md:w-1/2 px-4">
-                        <p className="text-lg leading-relaxed text-justify">{section.text}</p>
+                        <p className="text-lg leading-relaxed text-left">{section.text}</p>
                     </div>
                     <div className="md:w-1/2 px-4">
                         <img
@@ -228,14 +212,14 @@ const ContentSection: FunctionComponent<{ section: ContentSection }> = ({ sectio
 
         case 'full-text':
             return (
-                <div className="mb-8 px-4">
-                    <p className="text-lg leading-relaxed text-justify">{section.text}</p>
+                <div className="mb-8 px-4 md:px-0">
+                    <p className="text-lg leading-relaxed text-left">{section.text}</p>
                 </div>
             );
 
         case 'full-image':
             return (
-                <div className="mb-8 px-4">
+                <div className="mb-8 px-4 md:px-0">
                     <img
                         src={section.imageSrc}
                         alt={section.imageAlt || ''}
