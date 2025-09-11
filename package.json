@@ -12,7 +12,7 @@
   "dependencies": {
     "@carry0987/utils": "^3.8.5",
     "@headlessui/react": "^2.2.7",
-    "lucide-react": "^0.542.0",
+    "lucide-react": "^0.544.0",
     "preact": "^10.27.1",
     "react-icons": "^5.5.0"
   },
@@ -24,7 +24,7 @@
     "prettier": "^3.6.2",
     "tailwindcss": "^4.1.13",
     "typescript": "~5.9.2",
-    "vite": "^7.1.4"
+    "vite": "^7.1.5"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
