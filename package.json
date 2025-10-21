@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@carry0987/utils": "^3.8.6",
+    "@carry0987/utils": "^3.9.1",
     "@headlessui/react": "^2.2.9",
     "lucide-react": "^0.546.0",
     "preact": "^10.27.2",
@@ -18,13 +18,13 @@
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.10.2",
-    "@tailwindcss/vite": "^4.1.14",
-    "@types/node": "^24.8.1",
+    "@tailwindcss/vite": "^4.1.15",
+    "@types/node": "^24.9.1",
     "autoprefixer": "^10.4.21",
     "prettier": "^3.6.2",
-    "tailwindcss": "^4.1.14",
+    "tailwindcss": "^4.1.15",
     "typescript": "~5.9.3",
-    "vite": "^7.1.10"
+    "vite": "^7.1.11"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
