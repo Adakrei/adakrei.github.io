@@ -12,14 +12,14 @@
   "dependencies": {
     "@carry0987/utils": "^3.9.1",
     "@headlessui/react": "^2.2.9",
-    "lucide-react": "^0.546.0",
+    "lucide-react": "^0.552.0",
     "preact": "^10.27.2",
     "react-icons": "^5.5.0"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.10.2",
     "@tailwindcss/vite": "^4.1.16",
-    "@types/node": "^24.9.1",
+    "@types/node": "^24.10.0",
     "autoprefixer": "^10.4.21",
     "prettier": "^3.6.2",
     "tailwindcss": "^4.1.16",
