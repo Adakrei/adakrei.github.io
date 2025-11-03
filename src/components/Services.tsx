@@ -291,7 +291,7 @@ const ServiceCard: FunctionComponent<ServiceCardProps> = ({
 
     return (
         <>
-            <div className="bg-[#1E2351] text-white w-5/12 h-80 border-solid rounded-4xl grow-1 flex flex-col justify-between min-w-84">
+            <div className="bg-[#1E2351] text-white w-5/12 h-80 border-solid rounded-4xl grow flex flex-col justify-between min-w-84">
                 <div>
                     <h3 className="text-4xl text-left mx-6 mt-4">{title}</h3>
                     <ul className="list-disc pl-10 text-left mx-6 mt-2">
