@@ -3,11 +3,9 @@ import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 const ContactUs: React.FC = () => {
     return (
         <section className="max-w-6xl mx-auto px-4 py-16 text-white" id={'contact'}>
-            <div className="w-full max-w-7xl pl-4 md:pl-8 mb-6">
-                <h2 className="text-4xl md:text-6xl text-left py-3">Contact Us</h2>
-            </div>
+            <h2 className="text-4xl md:text-6xl text-left py-3 mb-6">Contact Us</h2>
 
-            <div className="w-full max-w-7xl flex flex-col md:flex-row justify-center items-center gap-16">
+            <div className="flex flex-col md:flex-row justify-center items-center gap-16">
                 {/* Left side: Form area */}
                 <div className="w-full md:w-1/2 p-8 lg:p-12 rounded-lg shadow-lg space-y-16">
                     <div className="flex items-center space-x-6">

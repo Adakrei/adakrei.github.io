@@ -26,7 +26,7 @@ const Navigation = () => {
     const currentUrl: string = setUrlParam(window.location.href, null, true);
 
     return (
-        <Disclosure as="nav" className="bg-white/10 backdrop-blur-lg fixed top-0 left-0 w-full z-1 text-white">
+        <Disclosure as="nav" className="bg-white/10 backdrop-blur-lg fixed top-0 left-0 w-full z-50 text-white">
             {({ open, close }) => (
                 <Fragment>
                     <div className="flex items-center justify-between px-6 py-4">
@@ -125,7 +125,7 @@ const HeroSection = () => {
     return (
         <Fragment>
             <Navigation />
-            <div className="h-screen content-center text-white">
+            <div className="h-screen flex flex-col justify-center text-white">
                 <div className="flex items-center justify-center text-xl">
                     <img src={adakreiLogo} className="logo object-contain object-center" alt="Adakrei logo"></img>
                     <span className="pl-4 text-4xl">Adakrei</span>

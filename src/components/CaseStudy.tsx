@@ -7,17 +7,34 @@ export const CaseStudy: FunctionComponent = () => {
         {
             id: '1',
             position: 'left' as const,
-            content: 'We utilize the blablablablablablablablablabla blablablablablablablablablablabla bla'
+            title: 'Industrial Anomaly Detection',
+            description:
+                'Developed a custom machine learning model for real-time anomaly detection in industrial sensor data, improving operational efficiency by 25%.',
+            tags: ['Machine Learning', 'Python', 'TensorFlow'],
         },
         {
             id: '2',
             position: 'right' as const,
-            content: 'We utilize the blablablablablablablablablabla blablablablablablablablablablabla bla'
+            title: 'Smart Home IoT Ecosystem',
+            description:
+                'Engineered a comprehensive IoT ecosystem for a smart home startup, including firmware for edge devices, cloud data ingestion pipelines, and a real-time monitoring dashboard.',
+            tags: ['IoT', 'Firmware', 'Cloud', 'React'],
         },
         {
             id: '3',
             position: 'left' as const,
-            content: 'We utilize the blablablablablablablablablabla blablablablablablablablablablabla bla'
+            title: 'E-commerce Platform @ Scale',
+            description:
+                'Built a high-traffic e-commerce platform with a modern, responsive frontend and a scalable microservices-based backend, handling over 10,000 concurrent users.',
+            tags: ['E-commerce', 'Microservices', 'Node.js', 'React'],
+        },
+        {
+            id: '4',
+            position: 'right' as const,
+            title: 'Secure Auth with Supabase & ECPay',
+            description:
+                'Implemented a secure authentication system using Supabase, integrating ECPay for payments, enabling third-party logins (Google, GitHub), and using JWT validation with data encryption.',
+            tags: ['Supabase', 'ECPay', 'JWT', 'Security', 'Authentication'],
         }
     ];
 
@@ -29,15 +46,15 @@ export const CaseStudy: FunctionComponent = () => {
                     <CaseCard key={caseItem.id} {...caseItem} />
                 ))}
             </div>
-            <div className="mt-6 bg-gray-800 rounded-xl p-8 flex items-center justify-between">
+            <div className="mt-6 bg-black rounded-xl p-8 flex items-center justify-between">
                 <div className="space-y-4">
                     <h3 className="text-white font-medium text-left">Need A Full Description?</h3>
                     <p className="text-white text-left">
-                        Some
+                        Curious about the deep dive?
                         <br />
-                        words
+                        Explore our technical architectures,
                         <br />
-                        around 3 lines
+                        methodologies, and business outcomes.
                     </p>
                     <button className="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors">
                         Get our full description

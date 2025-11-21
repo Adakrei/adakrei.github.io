@@ -3,4 +3,8 @@
 html,
 body {
     background-color: #121212;
+    color: rgb(229 231 235); /* Set a default light-gray text color for better readability on a dark background */
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }

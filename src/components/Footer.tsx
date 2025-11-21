@@ -3,7 +3,7 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 const Footer = () => {
     return (
         <footer className="bg-gray-900 text-white overflow-hidden px-8 py-12">
-            <div className="max-w-7xl w-4/5 mx-auto flex flex-col md:flex-row justify-between items-center md:items-start mb-12">
+            <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start mb-12">
                 {/* Logo */}
                 <div className="flex flex-col space-y-2 text-center md:text-left">
                     <div className="flex items-center justify-center md:justify-start gap-3">

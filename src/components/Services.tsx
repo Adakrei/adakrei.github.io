@@ -291,10 +291,10 @@ const ServiceCard: FunctionComponent<ServiceCardProps> = ({
 
     return (
         <>
-            <div className="bg-[#1E2351] text-white w-5/12 h-80 border-solid rounded-4xl grow flex flex-col justify-between min-w-84">
+            <div className="bg-[#1E2351] text-white border-solid rounded-4xl flex flex-col justify-between p-8 transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl">
                 <div>
-                    <h3 className="text-4xl text-left mx-6 mt-4">{title}</h3>
-                    <ul className="list-disc pl-10 text-left mx-6 mt-2">
+                    <h3 className="text-4xl text-left mt-4">{title}</h3>
+                    <ul className="list-disc pl-10 text-left mt-2">
                         {description.map((item, index) => (
                             <li key={index} className="text-lg">
                                 {item}
@@ -302,7 +302,7 @@ const ServiceCard: FunctionComponent<ServiceCardProps> = ({
                         ))}
                     </ul>
                 </div>
-                <button className="flex items-center hover:underline mx-6 mb-4" onClick={openModal}>
+                <button className="flex items-center hover:underline mb-4" onClick={openModal}>
                     <div className="w-8 h-8 border rounded-full flex items-center justify-center mr-2">
                         <ArrowRight size={26} />
                     </div>
@@ -317,9 +317,9 @@ const ServiceCard: FunctionComponent<ServiceCardProps> = ({
 
 const Services: FunctionComponent = () => {
     return (
-        <div className="max-w-6xl mx-auto px-4 py-16 text-white w-screen" id={'services'}>
+        <div className="max-w-6xl mx-auto px-4 py-16 text-white" id={'services'}>
             <h2 className="text-4xl md:text-6xl text-left py-3">Services</h2>
-            <div className="flex flex-wrap justify-evenly gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {service_content.map((item) => (
                     <ServiceCard
                         key={item.id}
