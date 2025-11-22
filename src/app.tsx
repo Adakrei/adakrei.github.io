@@ -14,7 +14,7 @@ export function App() {
     return (
         <Fragment>
             <BackgroundCanvas />
-            <div className="relative z-1">
+            <div className="relative z-1 bg-background text-text-primary">
                 <HeroSection />
                 <Services />
                 <CaseStudy />
