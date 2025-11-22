@@ -20,7 +20,7 @@ const TimelineItem: FunctionComponent<{ step: WorkFlowStep; index: number }> = (
         <div className={`flex items-center w-full mx-auto ${alignmentClasses}`}>
             {/* <!-- Left/Right Content --> */}
             <div className="w-full md:w-1/2 md:px-8">
-                <div className={`p-6 rounded-lg bg-surface border border-gray-700/50 ${textAlignment}`}>
+                <div className={`p-6 rounded-lg bg-surface/75 backdrop-blur-lg border border-gray-700 ${textAlignment}`}>
                     <p className="text-sm font-semibold text-primary uppercase">{`STEP ${String(step.id).padStart(2, '0')}`}</p>
                     <h3 className="text-xl font-bold mt-1 text-text-primary">{step.title}</h3>
                     <p className="mt-2 text-text-secondary">{step.description}</p>

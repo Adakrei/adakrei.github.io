@@ -95,7 +95,7 @@ const Modal: FunctionComponent<{ isOpen: boolean; onClose: () => void; title: st
 
     return (
         <div className="fixed inset-0 bg-background/50 backdrop-blur-sm flex items-center justify-center z-50" onClick={onClose}>
-            <div className="bg-surface text-text-primary rounded-xl p-8 w-full max-w-4xl mx-4 border border-gray-700 shadow-2xl overflow-y-auto max-h-[90vh]" onClick={(e) => e.stopPropagation()}>
+            <div className="bg-surface/75 backdrop-blur-lg text-text-primary rounded-xl p-8 w-full max-w-4xl mx-4 border border-gray-700 shadow-2xl overflow-y-auto max-h-[90vh]" onClick={(e) => e.stopPropagation()}>
                 <div className="flex justify-between items-center mb-6">
                     <h2 className="text-3xl font-bold text-primary">{title}</h2>
                     <button onClick={onClose} className="text-text-secondary hover:text-white transition-colors duration-200">
@@ -122,7 +122,7 @@ const ServiceCard: FunctionComponent<ServiceItem> = ({ title, description, modal
 
     return (
         <>
-            <div className="bg-surface rounded-lg border border-gray-700 p-8 flex flex-col justify-between transition duration-300 ease-in-out">
+            <div className="bg-surface/75 backdrop-blur-lg rounded-lg border border-gray-700 p-8 flex flex-col justify-between transition duration-300 ease-in-out">
                 <div>
                     <div className="text-primary mb-4">{icon}</div>
                     <h3 className="text-2xl font-bold text-text-primary mb-3">{title}</h3>
