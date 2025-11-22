@@ -1,45 +1,36 @@
 import type { CaseStudyProps } from '@/interfaces/CaseStudyProps';
+import { FunctionComponent } from 'preact';
 
-import { FunctionComponent, Fragment } from 'preact';
-
-export const CaseCard: FunctionComponent<CaseStudyProps> = ({ id, position, content, imageUrl }) => {
-    const CaseNumber = () => (
-        <div className="bg-[#1E2351] text-white p-4 rounded-lg inline-block h-1/3">
-            <h2 className="text-xl">Case {id}</h2>
-        </div>
-    );
-
-    const CaseContent = () => <div className={`w-1/3 text-white overflow-hidden text-ellipsis`}>{content}</div>;
-
-    const CaseImage = () => (
-        <div className="bg-gray-300 w-48 h-48">
-            {imageUrl && <img src={imageUrl} alt={`Case study ${id}`} className="w-full h-full object-cover" />}
-        </div>
-    );
-
+export const CaseCard: FunctionComponent<CaseStudyProps> = ({ title, description, tags, imageUrl }) => {
     return (
-        <div className="flex items-top w-full py-16">
-            {position === 'left' ? (
-                <Fragment>
-                    <div className="w-1/3 flex justify-start">
-                        <CaseNumber />
-                    </div>
-                    <CaseContent />
-                    <div className="w-1/3 flex justify-end">
-                        <CaseImage />
-                    </div>
-                </Fragment>
-            ) : (
-                <Fragment>
-                    <div className="w-1/3 flex justify-start">
-                        <CaseImage />
-                    </div>
-                    <CaseContent />
-                    <div className="w-1/3 flex justify-end">
-                        <CaseNumber />
-                    </div>
-                </Fragment>
-            )}
+        // Overhauled "Modern & Techy" Card Container
+        <div
+            className="bg-surface/75 backdrop-blur-lg rounded-lg border border-white/30 overflow-hidden
+                       transform transition-all duration-300 ease-in-out
+                       hover:border-primary/70 hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] hover:-translate-y-2">
+            {/* Image Section */}
+            <div className="w-full h-48 bg-background flex items-center justify-center overflow-hidden">
+                {imageUrl ? (
+                    <img src={imageUrl} alt={title} className="w-full h-full object-cover" />
+                ) : (
+                    <span className="text-text-secondary">Image Placeholder</span>
+                )}
+            </div>
+
+            {/* Content Section */}
+            <div className="p-6">
+                <h3 className="text-xl font-bold text-text-primary mb-2">{title}</h3>
+                <p className="text-text-secondary text-base mb-4 h-20 overflow-hidden">{description}</p>
+
+                {/* Tags Section */}
+                <div className="flex flex-wrap gap-2">
+                    {tags.map((tag) => (
+                        <span key={tag} className="bg-gray-200 text-black text-xs font-medium px-3 py-1 rounded-full">
+                            {tag}
+                        </span>
+                    ))}
+                </div>
+            </div>
         </div>
     );
 };
