@@ -23,7 +23,7 @@ export const ContactUs: FunctionComponent = () => {
                     </p>
                 </div>
 
-                <div className="bg-surface/75 backdrop-blur-lg rounded-lg border border-gray-700 shadow-xl p-8 md:p-12">
+                <div className="bg-surface/75 backdrop-blur-lg rounded-lg border border-white/30 shadow-xl p-8 md:p-12">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                         {/* Left Column: Contact Form */}
                         <div>

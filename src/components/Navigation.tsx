@@ -26,7 +26,7 @@ export const Navigation = () => {
     const currentUrl: string = setUrlParam(window.location.href, null, true);
 
     return (
-        <Disclosure as="nav" className="bg-surface/75 backdrop-blur-lg fixed top-0 left-0 w-full z-50 text-text-primary">
+        <Disclosure as="nav" className="bg-surface/75 backdrop-blur-lg fixed top-0 left-0 w-full z-50 text-text-primary border-b border-white/20">
             {({ open, close }) => (
                 <Fragment>
                     <div className="flex items-center justify-between px-6 py-4">
