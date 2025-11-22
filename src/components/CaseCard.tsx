@@ -10,7 +10,7 @@ export const CaseCard: FunctionComponent<CaseStudyProps> = ({
     return (
         // Overhauled "Modern & Techy" Card Container
         <div
-            className="bg-surface rounded-lg border border-gray-700/50 overflow-hidden
+            className="bg-surface rounded-lg border border-gray-700 overflow-hidden
                        transform transition-all duration-300 ease-in-out
                        hover:border-primary/70 hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] hover:-translate-y-2">
             

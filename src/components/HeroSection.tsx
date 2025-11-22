@@ -18,7 +18,7 @@ export const HeroSection = () => {
             {/* The new Hero Section content */}
             <div className="h-screen flex flex-col items-center justify-center text-center px-4">
                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight">
-                    <span className="block bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
+                    <span className="block text-primary">
                         Your Imagination
                     </span>
                     <span className="block mt-2 text-text-primary">

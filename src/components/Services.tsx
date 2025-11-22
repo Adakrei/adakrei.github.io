@@ -122,7 +122,7 @@ const ServiceCard: FunctionComponent<ServiceItem> = ({ title, description, modal
 
     return (
         <>
-            <div className="bg-surface rounded-lg border border-gray-700/50 p-8 flex flex-col justify-between transition duration-300 ease-in-out">
+            <div className="bg-surface rounded-lg border border-gray-700 p-8 flex flex-col justify-between transition duration-300 ease-in-out">
                 <div>
                     <div className="text-primary mb-4">{icon}</div>
                     <h3 className="text-2xl font-bold text-text-primary mb-3">{title}</h3>
