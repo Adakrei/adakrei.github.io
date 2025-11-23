@@ -1,5 +1,10 @@
 import { CaseCard } from './CaseCard';
 import { FunctionComponent } from 'preact';
+// Import images
+import machinelearningImage from '/assets/machinelearning.png';
+import iotImage from '/assets/iot.png';
+import ecommerceimage from '/assets/ecommerce.png';
+import codeimg from '/assets/code.png';
 
 // Data updated with imageUrls for the new CaseCard design
 const cases = [
@@ -9,7 +14,7 @@ const cases = [
         description:
             'Developed a custom machine learning model for real-time anomaly detection in industrial sensor data, improving operational efficiency by 25%.',
         tags: ['Machine Learning', 'Python', 'TensorFlow'],
-        imageUrl: 'https://images.unsplash.com/photo-1674051834275-9b377b72e923?q=80&w=2500&auto=format&fit=crop'
+        imageUrl: machinelearningImage
     },
     {
         id: '2',
@@ -17,7 +22,7 @@ const cases = [
         description:
             'Engineered a comprehensive IoT ecosystem for a smart home startup, including firmware, cloud pipelines, and a real-time monitoring dashboard.',
         tags: ['IoT', 'Firmware', 'Cloud', 'React'],
-        imageUrl: 'https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=2500&auto=format&fit=crop'
+        imageUrl: iotImage
     },
     {
         id: '3',
@@ -25,7 +30,7 @@ const cases = [
         description:
             'Built a high-traffic e-commerce platform with a modern, responsive frontend and a scalable microservices-based backend for over 10,000 concurrent users.',
         tags: ['E-commerce', 'Microservices', 'Node.js'],
-        imageUrl: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=2500&auto=format&fit=crop'
+        imageUrl: ecommerceimage
     },
     {
         id: '4',
@@ -33,7 +38,7 @@ const cases = [
         description:
             'Implemented a secure authentication system using Supabase, integrating ECPay for payments, enabling third-party logins, and using JWT validation.',
         tags: ['Supabase', 'ECPay', 'JWT', 'Security'],
-        imageUrl: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=2500&auto=format&fit=crop'
+        imageUrl: codeimg
     }
 ];
 

@@ -1,20 +1,21 @@
 import { FunctionComponent } from 'preact';
 import { useState } from 'preact/hooks';
 import { ArrowRight, X, Code, Share2, Plug, Database, MonitorSmartphone } from 'lucide-react';
-import industrialAutomationImg from '@/assets/industrial-automation.png';
-import monitoringMaintainanceImg from '@/assets/Engineers monitoring predictive maintenance dashboard.png';
-import smartSensingImg from '@/assets/SmartSensor.png';
-import FactoryDashBoardImg from '@/assets/FactoryDashBoard.png';
-import IoTEnvImg from '@/assets/IoTEnv.png';
-import SmartHomeImg from '@/assets/SmartHome.png';
-import APIIntegrationImg from '@/assets/APIIntegrationDiagram.png';
-import TeleComBotImg from '@/assets/TeleComArchi.png';
-import APIWorkFlowImg from '@/assets/API workflow.png';
-import DataBaseArch from '@/assets/DataBaseArchitecture.png';
-import DataMigration from '@/assets/DataMigration.png';
-import ResponesiveWebDesignImg from '@/assets/ResponesiveWebDesign.png';
-import WebsiteDesignProcImg from '@/assets/WebsiteDesignProc.png';
 import { ReactNode } from 'preact/compat';
+// Import images
+import industrialAutomationImg from '/assets/industrial-automation.png';
+import monitoringMaintainanceImg from '/assets/Engineers monitoring predictive maintenance dashboard.png';
+import smartSensingImg from '/assets/SmartSensor.png';
+import FactoryDashBoardImg from '/assets/FactoryDashBoard.png';
+import IoTEnvImg from '/assets/IoTEnv.png';
+import SmartHomeImg from '/assets/SmartHome.png';
+import APIIntegrationImg from '/assets/APIIntegrationDiagram.png';
+import TeleComBotImg from '/assets/TeleComArchi.png';
+import APIWorkFlowImg from '/assets/API workflow.png';
+import DataBaseArch from '/assets/DataBaseArchitecture.png';
+import DataMigration from '/assets/DataMigration.png';
+import ResponesiveWebDesignImg from '/assets/ResponesiveWebDesign.png';
+import WebsiteDesignProcImg from '/assets/WebsiteDesignProc.png';
 
 // --- DATA (Could be moved to a separate file later) ---
 export type ContentSectionType = 'text-image-right' | 'text-image-left' | 'full-text' | 'full-image';
