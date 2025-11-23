@@ -1,7 +1,6 @@
-import { FunctionComponent } from 'preact';
-import { useState } from 'preact/hooks';
+import type { FunctionComponent, ReactNode } from 'react';
+import { useState } from 'react';
 import { ArrowRight, X, Code, Share2, Plug, Database, MonitorSmartphone } from 'lucide-react';
-import { ReactNode } from 'preact/compat';
 // Import images
 import industrialAutomationImg from '/assets/industrial-automation.png';
 import monitoringMaintainanceImg from '/assets/Engineers monitoring predictive maintenance dashboard.png';

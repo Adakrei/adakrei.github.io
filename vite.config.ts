@@ -1,21 +1,24 @@
+import { reactRouter } from '@react-router/dev/vite';
 import { defineConfig } from 'vite';
+import tsconfigPaths from 'vite-tsconfig-paths';
 import tailwindcss from '@tailwindcss/vite';
-import autoprefixer from 'autoprefixer';
-import preact from '@preact/preset-vite';
 import path from 'path';
 
-// https://vite.dev/config/
 export default defineConfig({
     resolve: {
         alias: {
-            '@': path.resolve(__dirname, 'src')
+            '@': path.resolve(__dirname, 'app')
         }
     },
-    plugins: [tailwindcss(), preact()],
-    base: '/',
-    css: {
-        postcss: {
-            plugins: [autoprefixer]
+    plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
+    build: {
+        cssMinify: true,
+        ssr: false
+    },
+    server: {
+        headers: {
+            'Cross-Origin-Opener-Policy': 'same-origin',
+            'Cross-Origin-Embedder-Policy': 'require-corp'
         }
     }
 });

@@ -7,10 +7,12 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Temporary files
 node_modules
-dist
-dist-ssr
-*.local
+
+# React Router
+/.react-router/
+/build/
 
 # Editor directories and files
 .vscode/*
