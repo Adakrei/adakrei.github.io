@@ -3,6 +3,14 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "description": "Official website for Adakrei Ltd. - Transform your complex requirements into elegant, high-performance software solutions",
+  "keywords": ["adakrei", "software development", "web development", "custom software"],
+  "author": "Adakrei Ltd.",
+  "homepage": "https://adakrei.github.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adakrei/adakrei.github.io"
+  },
   "scripts": {
     "lint": "prettier --write \"src/**/*.{ts,tsx,css,scss}\" \"index.html\"",
     "dev": "vite",
