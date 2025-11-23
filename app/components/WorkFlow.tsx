@@ -1,5 +1,5 @@
 import type { WorkFlowStep } from '@/interfaces/WorkFlowStep';
-import { FunctionComponent } from 'preact';
+import type { FunctionComponent } from 'react';
 
 const workflowSteps: WorkFlowStep[] = [
     {

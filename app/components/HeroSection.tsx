@@ -1,4 +1,4 @@
-import { Fragment } from 'preact';
+import { Fragment } from 'react';
 import { Navigation } from './Navigation';
 
 export const HeroSection = () => {

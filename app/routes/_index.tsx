@@ -1,4 +1,4 @@
-import { Fragment } from 'preact/jsx-runtime';
+import { Fragment } from 'react';
 import { BackgroundCanvas } from '@/components/BackgroundCanvas';
 import { HeroSection } from '@/components/HeroSection';
 import { Services } from '@/components/Services';
@@ -8,10 +8,7 @@ import { ContactUs } from '@/components/ContactUs';
 import { Footer } from '@/components/Footer';
 import { ScrollToTop } from '@/components/ScrollToTop';
 
-// Import global styles
-import './app.css';
-
-export function App() {
+export default function IndexPage() {
     return (
         <Fragment>
             <BackgroundCanvas />

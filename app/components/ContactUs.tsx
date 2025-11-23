@@ -1,7 +1,7 @@
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
-import { FunctionComponent } from 'preact'; // Use preact's FunctionComponent
+import type { FC } from 'react';
 
-export const ContactUs: FunctionComponent = () => {
+export const ContactUs: FC = () => {
     return (
         <section className="bg-background min-h-screen flex items-center py-20 sm:py-28" id={'contact'}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">

@@ -1,7 +1,7 @@
 import type { CaseStudyProps } from '@/interfaces/CaseStudyProps';
-import { FunctionComponent } from 'preact';
+import type { FC } from 'react';
 
-export const CaseCard: FunctionComponent<CaseStudyProps> = ({ title, description, tags, imageUrl }) => {
+export const CaseCard: FC<CaseStudyProps> = ({ title, description, tags, imageUrl }) => {
     return (
         // Overhauled "Modern & Techy" Card Container
         <div

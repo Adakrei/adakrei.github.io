@@ -1,4 +1,4 @@
-import { Fragment } from 'preact';
+import { Fragment } from 'react';
 import { Disclosure, DisclosureButton, DisclosurePanel, Transition } from '@headlessui/react';
 import { setUrlParam } from '@carry0987/utils';
 import adakreiLogo from '/adakrei.svg';
@@ -23,7 +23,7 @@ const handleScrollTo = (id: string) => {
 };
 
 export const Navigation = () => {
-    const currentUrl: string = setUrlParam(window.location.href, null, true);
+    const currentUrl: string = typeof window !== 'undefined' ? setUrlParam(window.location.href, null, true) : '/';
 
     return (
         <Disclosure

@@ -1,5 +1,5 @@
 import { CaseCard } from './CaseCard';
-import { FunctionComponent } from 'preact';
+import type { FC } from 'react';
 // Import images
 import machinelearningImage from '/assets/machinelearning.png';
 import iotImage from '/assets/iot.png';
@@ -42,7 +42,7 @@ const cases = [
     }
 ];
 
-export const CaseStudy: FunctionComponent = () => {
+export const CaseStudy: FC = () => {
     return (
         <section className="bg-background py-20 sm:py-28" id={'cases'}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
