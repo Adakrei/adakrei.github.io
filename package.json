@@ -18,27 +18,27 @@
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
-    "@react-router/dev": "^7.13.0",
-    "@react-router/fs-routes": "^7.13.0",
-    "@react-router/node": "^7.13.0",
-    "isbot": "^5.1.35",
+    "@react-router/dev": "^7.13.1",
+    "@react-router/fs-routes": "^7.13.1",
+    "@react-router/node": "^7.13.1",
+    "isbot": "^5.1.36",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "react-router": "^7.13.0",
+    "react-router": "^7.13.1",
     "@carry0987/utils": "^3.10.3",
     "@headlessui/react": "^2.2.9",
-    "lucide-react": "^0.575.0",
-    "react-icons": "^5.5.0"
+    "lucide-react": "^0.577.0",
+    "react-icons": "^5.6.0"
   },
   "devDependencies": {
-    "@tailwindcss/vite": "^4.2.0",
-    "@types/node": "^25.3.0",
+    "@tailwindcss/vite": "^4.2.2",
+    "@types/node": "^25.5.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "prettier": "^3.8.1",
-    "tailwindcss": "^4.2.0",
+    "tailwindcss": "^4.2.2",
     "typescript": "^5.9.3",
-    "vite": "^7.3.1",
+    "vite": "^8.0.1",
     "vite-tsconfig-paths": "^6.1.1"
   },
   "pnpm": {
