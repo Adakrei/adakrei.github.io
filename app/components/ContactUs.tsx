@@ -23,7 +23,8 @@ export const ContactUs: FC = () => {
                         </div>
                         <h3 className="mt-6 text-3xl font-bold text-text-primary">Contact channels</h3>
                         <p className="mt-3 text-lg text-text-secondary">
-                            Email us or reach out on social—include your goals and timeline, and we'll follow up with the next steps.
+                            Email us or reach out on social—include your goals and timeline, and we'll follow up with
+                            the next steps.
                         </p>
 
                         <div className="mt-8 space-y-4">
@@ -39,9 +40,9 @@ export const ContactUs: FC = () => {
                             </a>
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <a
-                                href="https://www.linkedin.com/company/adakrei/"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                                    href="https://www.linkedin.com/company/adakrei/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="flex flex-col items-center text-center gap-3 p-5 rounded-xl border border-white/15 bg-background/60 hover:border-primary/60 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_12px_30px_rgba(0,0,0,0.35)]">
                                     <span className="flex h-14 w-14 items-center justify-center rounded-full bg-primary/15 text-primary">
                                         <FaLinkedin size={26} />
@@ -51,9 +52,9 @@ export const ContactUs: FC = () => {
                                     </div>
                                 </a>
                                 <a
-                                href="https://github.com/Adakrei"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                                    href="https://github.com/Adakrei"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="flex flex-col items-center text-center gap-3 p-5 rounded-xl border border-white/15 bg-background/60 hover:border-primary/60 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_12px_30px_rgba(0,0,0,0.35)]">
                                     <span className="flex h-14 w-14 items-center justify-center rounded-full bg-primary/15 text-primary">
                                         <FaGithub size={26} />
@@ -64,7 +65,6 @@ export const ContactUs: FC = () => {
                                 </a>
                             </div>
                             <div className="flex flex-wrap items-center gap-4 text-sm text-text-secondary mt-2">
-                                
                                 <div className="flex items-center gap-2">
                                     <FaClock className="text-primary" />
                                     Typical hours: 08:00–18:00 GMT+8 (Mon–Fri)
